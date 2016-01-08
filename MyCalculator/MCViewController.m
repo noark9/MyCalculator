@@ -8,8 +8,9 @@
 
 #import "MCViewController.h"
 #import "MCCalculatorCore.h"
+#import <NotificationCenter/NotificationCenter.h>
 
-@interface MCViewController ()
+@interface MCViewController () <NCWidgetProviding>
 
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 
@@ -142,6 +143,17 @@
         self.resultLabel.text = error.userInfo[@"result"];
     }
     self.needReplaceResultLabel = YES;
+}
+
+#pragma mark - Today Extension
+- (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
+    // Perform any setup necessary in order to update the view.
+    
+    // If an error is encountered, use NCUpdateResultFailed
+    // If there's no update required, use NCUpdateResultNoData
+    // If there's an update, use NCUpdateResultNewData
+    
+    completionHandler(NCUpdateResultNewData);
 }
 
 @end

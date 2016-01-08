@@ -91,7 +91,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.springboard"
-         RemotePath = "/Today">
+         RemotePath = "/Watch App">
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference

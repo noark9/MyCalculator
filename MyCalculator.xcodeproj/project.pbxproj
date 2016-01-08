@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180F7FF71ABBACF000862996 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18949FE618A75E0C007CEB84 /* MCViewController.m */; };
 		1870DFD41AB9E07100D28C27 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1870DFD31AB9E07100D28C27 /* NotificationCenter.framework */; };
-		1870DFDA1AB9E07100D28C27 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870DFD91AB9E07100D28C27 /* TodayViewController.m */; };
 		1870DFDC1AB9E07100D28C27 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1870DFDB1AB9E07100D28C27 /* MainInterface.storyboard */; };
 		1870DFDF1AB9E07100D28C27 /* TodayCaculator.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1870DFD21AB9E07000D28C27 /* TodayCaculator.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1870DFEE1ABA59CB00D28C27 /* MCCaculatorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1870DFED1ABA59CB00D28C27 /* MCCaculatorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,7 +24,6 @@
 		18949FDD18A75E0C007CEB84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18949FDC18A75E0C007CEB84 /* main.m */; };
 		18949FE118A75E0C007CEB84 /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18949FE018A75E0C007CEB84 /* MCAppDelegate.m */; };
 		18949FE418A75E0C007CEB84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18949FE218A75E0C007CEB84 /* Main.storyboard */; };
-		18949FE718A75E0C007CEB84 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18949FE618A75E0C007CEB84 /* MCViewController.m */; };
 		18949FE918A75E0D007CEB84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18949FE818A75E0D007CEB84 /* Images.xcassets */; };
 		18949FF018A75E0D007CEB84 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18949FEF18A75E0D007CEB84 /* XCTest.framework */; };
 		18949FF118A75E0D007CEB84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18949FD018A75E0C007CEB84 /* Foundation.framework */; };
@@ -98,11 +97,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		180F5DF41ABE6DC000ED8996 /* TodayCaculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayCaculator.entitlements; sourceTree = "<group>"; };
 		1870DFD21AB9E07000D28C27 /* TodayCaculator.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayCaculator.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1870DFD31AB9E07100D28C27 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		1870DFD71AB9E07100D28C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1870DFD81AB9E07100D28C27 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		1870DFD91AB9E07100D28C27 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		1870DFDB1AB9E07100D28C27 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		1870DFE91ABA59CB00D28C27 /* MCCaculatorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MCCaculatorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1870DFEC1ABA59CB00D28C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -187,8 +185,7 @@
 		1870DFD51AB9E07100D28C27 /* TodayCaculator */ = {
 			isa = PBXGroup;
 			children = (
-				1870DFD81AB9E07100D28C27 /* TodayViewController.h */,
-				1870DFD91AB9E07100D28C27 /* TodayViewController.m */,
+				180F5DF41ABE6DC000ED8996 /* TodayCaculator.entitlements */,
 				1870DFDB1AB9E07100D28C27 /* MainInterface.storyboard */,
 				1870DFD61AB9E07100D28C27 /* Supporting Files */,
 			);
@@ -460,12 +457,17 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MC;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = noark;
 				TargetAttributes = {
 					1870DFD11AB9E07000D28C27 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = BW6R7QC2YP;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					1870DFE81ABA59CB00D28C27 = {
 						CreatedOnToolsVersion = 6.2;
@@ -558,7 +560,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1870DFDA1AB9E07100D28C27 /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180F7FF71ABBACF000862996 /* MCViewController.m in Sources */,
 				1870E0091ABA5A7000D28C27 /* MCCalculatorCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,7 +585,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18949FE118A75E0C007CEB84 /* MCAppDelegate.m in Sources */,
-				18949FE718A75E0C007CEB84 /* MCViewController.m in Sources */,
 				189FD25618A8810B0074B2F7 /* MCButton.m in Sources */,
 				18949FDD18A75E0C007CEB84 /* main.m in Sources */,
 			);
@@ -659,8 +660,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -672,6 +674,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "353d3268-7a7d-4c41-a0d5-269980c795a2";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -680,7 +683,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -690,6 +694,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "353d3268-7a7d-4c41-a0d5-269980c795a2";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -699,8 +704,8 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -718,6 +723,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aeb46198-a7f7-452b-9db4-54854e03be60";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -746,6 +752,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aeb46198-a7f7-452b-9db4-54854e03be60";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -800,7 +807,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -813,7 +819,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -829,8 +836,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -839,7 +847,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -852,7 +859,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -862,7 +870,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -873,16 +882,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = MyCalculator/MyCalculator.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyCalculator/MyCalculator-Prefix.pch";
 				INFOPLIST_FILE = "MyCalculator/MyCalculator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "60627874-ae08-4d90-8811-3d6a30082a2c";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -892,16 +900,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = MyCalculator/MyCalculator.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer:  Xiao ChenYu (4M9NMZ37Y3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyCalculator/MyCalculator-Prefix.pch";
 				INFOPLIST_FILE = "MyCalculator/MyCalculator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "60627874-ae08-4d90-8811-3d6a30082a2c";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -909,7 +916,6 @@
 		1894A00318A75E0D007CEB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyCalculator.app/MyCalculator";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -932,7 +938,6 @@
 		1894A00418A75E0D007CEB84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyCalculator.app/MyCalculator";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -958,6 +963,7 @@
 				1870DFE11AB9E07100D28C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1870E0021ABA59CB00D28C27 /* Build configuration list for PBXNativeTarget "MCCaculatorKit" */ = {
 			isa = XCConfigurationList;
@@ -966,6 +972,7 @@
 				1870E0041ABA59CB00D28C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1870E0061ABA59CB00D28C27 /* Build configuration list for PBXNativeTarget "MCCaculatorKitTests" */ = {
 			isa = XCConfigurationList;
@@ -974,6 +981,7 @@
 				1870E0081ABA59CB00D28C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18949FC818A75E0C007CEB84 /* Build configuration list for PBXProject "MyCalculator" */ = {
 			isa = XCConfigurationList;
