@@ -23,6 +23,7 @@
 		18949FFC18A75E0D007CEB84 /* MyCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18949FFB18A75E0D007CEB84 /* MyCalculatorTests.m */; };
 		1894A00D18A7BADA007CEB84 /* MCCalculatorCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894A00C18A7BADA007CEB84 /* MCCalculatorCore.m */; };
 		189FD25618A8810B0074B2F7 /* MCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD25518A8810B0074B2F7 /* MCButton.m */; };
+		18BEFC951C400F420038AB60 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BEFC941C400F420038AB60 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		1894A00C18A7BADA007CEB84 /* MCCalculatorCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCalculatorCore.m; sourceTree = "<group>"; };
 		189FD25418A8810B0074B2F7 /* MCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCButton.h; sourceTree = "<group>"; };
 		189FD25518A8810B0074B2F7 /* MCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCButton.m; sourceTree = "<group>"; };
+		18BEFC941C400F420038AB60 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				18949FE218A75E0C007CEB84 /* Main.storyboard */,
 				18949FE818A75E0D007CEB84 /* Images.xcassets */,
 				18949FD718A75E0C007CEB84 /* Supporting Files */,
+				18BEFC941C400F420038AB60 /* Launch Screen.storyboard */,
 			);
 			path = MyCalculator;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				18949FE918A75E0D007CEB84 /* Images.xcassets in Resources */,
 				18949FDB18A75E0C007CEB84 /* InfoPlist.strings in Resources */,
+				18BEFC951C400F420038AB60 /* Launch Screen.storyboard in Resources */,
 				18949FE418A75E0C007CEB84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
